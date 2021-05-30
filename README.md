@@ -15,24 +15,25 @@ First you'll need to have a few core applications installed, including Node, Yar
 1. Clone the repo
   ```sh
   git clone https://github.com/ryanwaits/ipfs_api.git
+  cd ipfs_api
   ```
 2. Make sure you've initialized IPFS
   ```sh
   ipfs init
   ```
-3. Install all app dependencies
-```sh
-  yarn install
-```
-4. In order to handle cross origin requests on IPFS, we need to set it in our local config. Otherwise, we will get a 403 Forbidden error on all of our API calls from our browser
+3. In order to handle cross origin requests on IPFS, we need to set it in our local config. Otherwise, we will get a 403 Forbidden error on all of our API calls from our browser
   ```sh
   ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
   ```
-5. Install nodemon package globally
-```sh
-  npm install nodemon -g
-```
-6. Start up the web app, server, and IPFS node
+4. Install nodemon package globally for running our backend server
+  ```sh
+    npm install nodemon -g
+  ```
+5. Install all app dependencies
+  ```sh
+    yarn install
+  ```
+6. Start up your React app, Node.js server, and IPFS node
 ```sh
   yarn dev
 ```
