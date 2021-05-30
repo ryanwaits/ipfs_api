@@ -20,15 +20,19 @@ First you'll need to have a few core applications installed, including Node, Yar
   ```sh
   ipfs init
   ```
-3. In order to handle cross origin requests on IPFS, we need to set it in our local config. Otherwise, we will get a 403 Forbidden error on all of our API calls from our browser
+3. Install all app dependencies
+```sh
+  yarn install
+```
+4. In order to handle cross origin requests on IPFS, we need to set it in our local config. Otherwise, we will get a 403 Forbidden error on all of our API calls from our browser
   ```sh
   ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
   ```
-4. Install nodemon package globally
+5. Install nodemon package globally
 ```sh
   npm install nodemon -g
 ```
-5. Start up the web app, server, and IPFS node
+6. Start up the web app, server, and IPFS node
 ```sh
   yarn dev
 ```
