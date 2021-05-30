@@ -230,7 +230,7 @@ function App({history}) {
       </Modal>
       <Row>
         <Col lg={12}>
-          <section style={{height: "10vh", margin: "2.5rem auto", color: "#fff", display: "flex", justifyContent: "flex-start", padding: "0.5rem 2.5rem"}}>
+          <section style={{height: "10vh", margin: "2.5rem auto", color: "#fff", display: "flex", alignItems: "center", justifyContent: "flex-start", padding: "0.5rem 2.5rem"}}>
             <p style={{display: "flex", alignItems: "center", padding: "1rem", fontSize: "14px", fontWeight: "bold", letterSpacing: "1px"}}>Active API Key</p>
             <p onClick={() => setState({...state, open: true})}style={{cursor: "pointer", display: "flex", alignItems: "center", width: "auto", height: "3rem", marginRight: "1rem", borderRadius: "15px", background: "rgba(255, 255, 255, 0.075)", padding: "0.5rem 1.5rem", fontSize: "14px", fontWeight: "bold", letterSpacing: "1px"}}>{state.apiKey.token}</p>
             <p onClick={createNewAPIKey} style={{cursor: "pointer", display: "flex", alignItems: "center", padding: "1rem", fontSize: "14px", fontWeight: "bold", letterSpacing: "1px", position: "relative", left: "300px"}}>⚡️ Generate New API Key</p>
