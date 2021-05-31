@@ -66,4 +66,28 @@ You can view all requests + activity in the Activity Logs at the bottom of the d
 
 ![SmokeTest](public/assets/smoke_test_example.gif)
 
+## IPFS vs other protocols
+
+When we interact with Web2 today, we are interacting with data living in a centralized server, accessed by location-based addressing. IPFS disrupts this model by acting as a distributed system (decentralized) for storing and accessing the data we're used to interacting with on Web2. Instead of locating data, or a website based on it's location (which server it's on) - IPFS uses content-based addressing. It creates a unique hash of the data and allows us to ask for the content directly, instead of asking where it is.
+
+## Improvements
+
+### Security
+
+[ ] Set up a more secure CORS configuration that does not allow anyone to make calls using our API keys
+
+[ ] Upgrade the database to Postgres and move credentials into a config file
+
+[x] Store passwords hashes using Bcrypt
+
+[ ] Add and configure security headers, ie CSRF, CSP
+
+[ ] Parameterize any queries to server to prevent any SQL injection
+
+### Authentication
+
+[ ] Use JSON web token for handling requests to the server 
+ 
+[ ] Set a token expiration
+
 
